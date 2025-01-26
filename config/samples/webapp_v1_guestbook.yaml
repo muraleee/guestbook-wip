@@ -1,0 +1,13 @@
+apiVersion: webapp.example.com/v1
+kind: Guestbook
+metadata:
+  labels:
+    app.kubernetes.io/name: workshop-in-progress
+  name: guestbook-sample
+spec:
+  redisName: redis-sample
+  frontend:
+    resources:
+      requests:
+        cpu: 80m
+    
